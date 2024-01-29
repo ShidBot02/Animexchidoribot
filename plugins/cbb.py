@@ -1,6 +1,5 @@
 #(©)Codexbotz
 
-from pyrogram import __version__
 from bot import Bot
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
@@ -9,7 +8,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>╭━━━━━━━━━━━━━━━━━\n○ Creator : <a href='https://t.me/shidoteshika1'>The King 🜲</a>\n➖➖➖➖➖➖➖➖➖➖\n○ Language : <code>Python3</code>\n○ Library : Pyrogram asyncio {__version__}</a>\n○ Source Code : <a href='https://t.me/shidoteshika1'>Ask my Owner</a>\n➖➖➖➖➖➖➖➖➖➖\n○ Channel : <a href='https://t.me/animemoviesr'>infinity void ∞</a>\n○ Support Group : <a href='https://t.me/chatbox480'>Aɴɪᴍᴇ Cɪʀᴄʟᴇ 🜲</a>\n╰━━━━━━━━━━━━━━━━━</b>",
+            text = f"<b>About this Bot:\n  A Telegram Bot for storing posts or files that can be accessed via a Special Link.\n\n○ Owner: @Vincent_Uchiha\n○ Anime Channel: <a href='https://t.me/AnimeChidori'>Anime Chidori</a>\n○ Ongoing Channel: <a href='https://t.me/Ongoing_Aniime'>Ongoing Anime</a>\n\n👨‍💻 Developed by @notAnimeChidori</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
