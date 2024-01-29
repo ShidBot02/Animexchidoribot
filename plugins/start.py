@@ -89,9 +89,11 @@ async def start_command(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton("🤖 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ], [
-        InlineKeyboardButton('⛩️ OUR OTHER CHANNELS ⛩️', url='https://t.me/animemoviesr/3171'),
+        InlineKeyboardButton('Aɴɪᴍᴇ Cʜɪᴅᴏʀɪ', url='https://t.me/AnimeChidori'),
+        InlineKeyboardButton('Oɴɢᴏɪɴɢ Aɴɪᴍᴇ', url='https://t.me/Ongoing_Aniime')
+    ],[
+                 InlineKeyboardButton("🔒 Close", callback_data = "close")
     ]])  
         await message.reply_text(
             text = START_MSG.format(
@@ -123,8 +125,8 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(text="JOIN CHANNEL", url=client.invitelink),
-            InlineKeyboardButton(text="JOIN GROUP", url=client.invitelink2)    
+            InlineKeyboardButton(text="ɪᴏɪɴ ᴄʜᴀɴɴᴇʟ 1", url=client.invitelink),
+            InlineKeyboardButton(text="ɪᴏɪɴ ᴄʜᴀɴɴᴇʟ 2", url=client.invitelink2)    
         ]
     ]
     try:
