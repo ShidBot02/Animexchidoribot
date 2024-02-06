@@ -37,6 +37,14 @@
       "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
       "value": "-100"
     },
+    "FORCESUB_CHANNEL":{
+      "description": "id of the first channel, if you want enable force sub feature else put 0",
+      "value": "0"
+     },
+    "FORCESUB_CHANNEL1":{
+      "description": "id of the second channel, if you want enable force sub feature else put 0",
+      "value": "0"  
+      },
     "START_MESSAGE": {
       "description": "Optional: start message of bot, use HTML parsemode format",
       "value": "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link."
