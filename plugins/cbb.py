@@ -8,7 +8,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>About this Bot:\n\n  A Telegram Bot for storing posts or files that can be accessed via a Special Link.\n\n○ Owner: @Vincent_Uchiha\n○ Anime Channel: <a href='https://t.me/AnimeChidori'>Anime Chidori</a>\n○ Ongoing Channel: <a href='https://t.me/Ongoing_Aniime'>Ongoing Anime</a>\n\n👨‍💻 Developed by @notAnimeChidori</b>",
+            text = f"<b>About this Bot:\n\n  A Telegram Bot for storing posts or files that can be accessed via a Special Link.\n\n○ Owner: @Vincent_Uchiha\n○ Anime Channel: <a href='https://t.me/AnimeChidori'>Anime Chidori</a>\n○ Ongoing Channel: <a href='https://t.me/Ongoing_Aniime'>Ongoing Anime</a>\n\n👨‍💻 Developed by @Shidoteshika1</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
