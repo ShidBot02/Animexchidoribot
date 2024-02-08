@@ -1,7 +1,7 @@
 from bot import Bot
 from pyrogram.types import Message
 from pyrogram import filters
-from config import ADMINS, BOT_STATS_TEXT, USER_REPLY_TEXT, HELP_TEXT, TUTO_TEXT
+from config import ADMINS, BOT_STATS_TEXT, USER_REPLY_TEXT
 from datetime import datetime
 from helper_func import get_readable_time
 
@@ -13,10 +13,7 @@ async def stats(bot: Bot, message: Message):
     await message.reply(BOT_STATS_TEXT.format(uptime=time))
 
 
-@Client.on_message(filters.command('help'))
-async def help(bot: Bot, message: Message):
-   await message.reply(HELP_TEXT)
-
-@Client.on_message(filters.command('tutorial'))
-async def tutorial(bot: Bot, message: Message):
-    await message.reply(TUTO_TEXT)
+@Bot.on_message(filters.private)
+async def useless(_,message: Message):
+    if USER_REPLY_TEXT:
+        await message.reply(USER_REPLY_TEXT)
